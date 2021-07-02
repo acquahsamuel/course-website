@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+$font-family-inter: "Inter", sans-serif;
+$font-family-lexend: "Lexend Deca", sans-serif;
+
+$color-primary: #0bdb27;
+$color-secondary: #05e8a4ed;
+
+$color-red: red;
+$color-blue: blue;
+$color-green: green;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(top right, $color-primary, $color-secondary);
+    height: 1rem;
+}
+
+body {
+    font-family: $font-family-inter;
+    font-weight: 400;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading__h1 {
+    font-size: 3rem;
+}
+
+.heading__h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.heading__h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text-red {
+    color: $color-red;
+}
+
+.text-blue {
+    color: $color-blue;
+}
+
+.text-green {
+    color: $color-green;
+}
+
+i {
+    color: $color-secondary;
+}
+
+li {
+    list-style: none;
+    font-family: $font-family-inter;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.paragraph {
+    margin: 0.7rem 0;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.nav {
+    background: rgb(246, 246, 246);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__paragraph {
+        display: block;
+
+        margin: 1rem 0;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    &__tag {
+        background-color: $color-secondary;
+    }
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1rem;
+        color: seashell;
+        font-size: 1.4rem;
+        border-radius: 0.7rem;
+        text-align: center;
+    }
+
+    &--primary {
+        background-color: royalblue;
+    }
+
+    &--danger {
+        background-color: red;
+    }
+
+    &--black {
+        padding: 0.7rem 1.4rem;
+        background-color: rgb(7, 10, 14);
+        color: white;
+        border-radius: 5px;
+    }
+
+    &--block {
+        width: 100%;
+    }
+}
+
+.form {
+    &__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.6rem;
+        border-radius: 5px;
+        margin: 0.3rem 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.section-description {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: #fff;
+}
+
+.preview {
+    &__list {
+        list-style: none;
+        padding: 0.2rem 0;
+    }
+}
+
+.section-overview {
+    padding: 4rem 0;
+    // background-color: rgb(1, 10, 1);
+    background: #eaeff3;
+    // background-image: linear-gradient(to tight, $color-primary, $color-secondary);
+}
+
+.section-reviews {
+    padding: 3rem 0;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem 0;
+    padding: 1rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+
+    &__user {
+        display: flex;
+    }
+    &__image {
+        width: 4rem;
+        border-radius: 40px;
+        border: px solid $color-green;
+    }
+}
+
+.download a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.track {
+    padding: 1rem;
+    background: whitesmoke;
+}
+
+.track__lists li {
+    border: 1px solid black;
+    margin: 0.2rem 0;
+    padding: 0.4rem 0.4rem;
+    font-size: 14px;
+    // box-shadow: 0px 1px 1px 2px rgb(200, 196, 196);
+}
+
+.section-newsletter {
+    background: linear-gradient(top right, $color-primary, $color-secondary);
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: linear-gradient(top right, $color-primary, $color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 650px) {
+    html {
+        font-size: 85%;
+    }
+
+    .heading__h1 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        height: 30vh;
+        padding: 2rem;
+    }
+
+    .section-description,
+    .section-reviews {
+        padding: 1rem;
+    }
+}
