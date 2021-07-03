@@ -86,7 +86,6 @@ li {
 }
 
 .nav {
-    background: rgb(246, 246, 246);
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -177,9 +176,6 @@ button {
 
 .section-overview {
     padding: 4rem 0;
-    // background-color: rgb(1, 10, 1);
-    background: #eaeff3;
-    // background-image: linear-gradient(to tight, $color-primary, $color-secondary);
 }
 
 .section-reviews {
@@ -213,7 +209,7 @@ button {
 
 .track {
     padding: 1rem;
-    background: whitesmoke;
+    background: rgb(250, 249, 250);
 }
 
 .track__lists li {
@@ -221,7 +217,6 @@ button {
     margin: 0.2rem 0;
     padding: 0.4rem 0.4rem;
     font-size: 14px;
-    // box-shadow: 0px 1px 1px 2px rgb(200, 196, 196);
 }
 
 .section-newsletter {
@@ -241,7 +236,7 @@ button {
     padding: 1rem;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
     html {
         font-size: 85%;
     }
@@ -252,6 +247,66 @@ button {
 
     .nav {
         height: 30vh;
+        padding: 2rem;
+    }
+
+    .section-description,
+    .section-reviews {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 90%;
+    }
+
+    .heading__h1 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        height: 30vh;
+        padding: 2rem;
+    }
+
+    .section-description,
+    .section-reviews {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+
+    .heading__h1 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        height: 35vh;
+        padding: 2rem;
+    }
+
+    .section-description,
+    .section-reviews {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading__h1 {
+        font-size: 2.5rem;
+    }
+
+    .heading__h2 {
+        font-size: 3rem;
+    }
+
+    .nav {
+        height: 45vh;
         padding: 2rem;
     }
 
