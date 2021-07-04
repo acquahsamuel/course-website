@@ -73,28 +73,6 @@ li {
     line-height: 1.5rem;
 }
 
-.nav {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-secondary;
-    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
-
-    &__paragraph {
-        display: block;
-
-        margin: 1rem 0;
-        font-size: 1rem;
-        font-weight: 300;
-    }
-
-    &__tag {
-        background-color: black;
-        color: whitesmoke;
-    }
-}
-
 button {
     outline: none;
     border: none;
@@ -154,7 +132,41 @@ button {
     }
 }
 
+
+.download .link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+// Effective CSS 
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(42, 255, 255);
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+
+    &__paragraph {
+        display: block;
+
+        margin: 1rem 0;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    &__tag {
+        background-color: black;
+        color: whitesmoke;
+    }
+}
+
 .description {
+    background: black;
+    margin-top: -7rem;
+    padding: 10rem 0;
+    color: whitesmoke;
+
     &__list {
         list-style: none;
         padding: 0.2rem 0;
@@ -179,7 +191,6 @@ button {
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        // border-bottom: 3px solid black;
         margin-bottom: 1rem;
         box-shadow: 0 14px 28px rgba(243, 243, 243, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
@@ -191,16 +202,14 @@ button {
     &__user {
         display: flex;
     }
+
     &__image {
         width: 4rem;
         border-radius: 40px;
     }
 }
 
-.download a {
-    text-decoration: none;
-    color: whitesmoke;
-}
+
 
 .newsletter {
     padding: 4rem;
@@ -233,9 +242,24 @@ button {
         padding: 2rem;
     }
 
-    .description,
+    .description {
+        padding:  9rem 2rem ;
+    }
+
+    .overview{
+        padding: 1rem;
+    }
+
+    .faq{
+        padding: 1rem;
+    }
+
     .reviews {
         padding: 1rem;
+    }
+
+    .newsletter{
+        padding: 1rem;   
     }
 }
 
@@ -253,7 +277,10 @@ button {
         padding: 2rem;
     }
 
-    .description,
+    .description {
+        // padding: 2rem;
+    }
+
     .reviews {
         padding: 2rem;
     }
@@ -269,7 +296,7 @@ button {
     }
 
     .nav {
-        height: 35vh;
+        height: 40vh;
         padding: 2rem;
     }
 
@@ -292,7 +319,9 @@ button {
         padding: 2rem;
     }
 
-    .description,
+    .description {
+        // padding: 1rem;
+    }
     .reviews {
         padding: 1rem;
     }
