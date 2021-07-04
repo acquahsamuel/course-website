@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css" />
+    <link rel="stylesheet" href="vendors/accordion/ziehharmonika.css" />
     <title>Guglex mentor</title>
   </head>
   <body>
+    
     <header class="header">
       <div class="header__top"></div>
     </header>
-
     <nav class="nav">
       <div class="container">
         <div class="nav__logo">
@@ -24,12 +25,10 @@
             Learn Web today <br />
             <span class="nav__tag"> Professional course </span>
           </h2>
-          <!-- <h4 class="heading__primary-4"></h4> -->
           <p class="nav__paragraph">
             Learn from beginner to advanced track, start a career in web
             development after completion
           </p>
-
           <button class="btn btn--black">
             Enroll now <span class="ti-arrow-down"></span>
           </button>
@@ -37,184 +36,254 @@
       </div>
     </nav>
 
-    <section class="section-description">
-      <div class="container">
-        <h1 class="heading__h1">
-          Build anything you want with Html,CSS,Javascript
-        </h1>
-        <p class="paragraph">
-          Would you like to learn how to build website for your business,
-          startup or switch to the tech industry. Then enroll in our 1st track
-          course
-        </p>
-
-        <ul class="preview__lists">
-          <li class="preview__list">
-            <i class="ti-check-box"></i> No prior experience
-          </li>
-
-          <li class="preview__list">
-            <i class="ti-check-box"></i> Learn by doing
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> Step-by-step lessons
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> Easy to understand examples
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> From theory to practice
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> Solid understanding for programming
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> Experienced instructors
-          </li>
-          <li class="preview__list">
-            <i class="ti-check-box"> </i> Career guidance and mentorship
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section-overview">
-      <div class="container">
-        <!-- <h2 class="heading__h2">Why Enroll</h2>
-        <p class="paragraph">
-          Having a solid graps about the core foundation, principles at your
-          begineer level goes a long run , to impact your career as whole.
-          Learning from experienced developers with one-to-one mentorship speed
-          up your learning progress 10x faster in any career, because you limit
-          errors and doing things in the right way is introduced at the
-          beginner. I wish someone taught me this before i started learn coding
-          years ago.
-        </p> -->
-
-        <h2 class="heading__h2 text-center">Learning Tracks</h2>
-        <p class="paragrph text-center">Course Modules ~ Beginners</p>
-        <div class="track">
-          <h3 class="heading__h3">Mindset</h3>
-          <ul class="track__lists">
-            <li>Myths about programming</li>
-            <li>You won't be wrong</li>
-            <li>Practice practioner</li>
-            <li>Fear of Code</li>
-            <li>What we all do</li>
-            <li>Truly execptional</li>
-            <li>Best learning techniques</li>
-          </ul>
-        </div>
-
-        <div class="track">
-          <h3 class="heading__h3 text-uppercase">html</h3>
-          <ul class="track__lists">
-            <li>Getting Started - Tool and Configuration</li>
-            <li>Diving into the Basic of Html</li>
-            <li>Making website beautiful</li>
-            <li><a href="http://"> Projects link </a></li>
-          </ul>
-        </div>
-
-        <div class="track">
-          <h3 class="heading__h3 text-uppercase">css</h3>
-          <ul class="track__lists">
-            <li>Hello world</li>
-            <li>Hello world</li>
-            <li><a href="http://"> CSS Projects </a></li>
-          </ul>
-        </div>
-
-        <div class="track">
-          <h3 class="heading__h3 text-uppercase">Javascript</h3>
-          <ul class="track__lists">
-            <li>Hello world</li>
-            <li>Hello world</li>
-            <li><a href="http://"> Project link </a></li>
-          </ul>
-        </div>
-
-        <div class="track">
-          <h3 class="heading__h3 text-uppercase">Social Coding</h3>
-          <ul class="track__lists">
-            <li>Open Source</li>
-            <li>Github Pages</li>
-          </ul>
-        </div>
-
-        <div class="track">
-          <!-- <a class="btn btn--black download" href="#" download="">
-            Download full curriculum</a
-          > -->
-
-          <button class="btn btn--black download">
-            <a href="http://" download=""> Download full curriculum </a>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-reviews">
-      <div class="container">
-        <h2 class="heading__h3">What people are saying</h2>
-
-        <div class="reviews">
+    <section class="section">
+      <div class="description">
+        <div class="container">
+          <h1 class="heading__h1">
+            Build anything you want with Html,CSS,Javascript
+          </h1>
           <p class="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            officia ipsam laboriosam a sequi cumque sed odio perspiciatis.
+            Would you like to learn how to build website for your business,
+            startup or switch to the tech industry.
           </p>
 
-          <div class="reviews__user">
-            <img
-              class="reviews__image"
-              src="images/user.jpg"
-              alt=""
-              srcset=""
-            />
-          </div>
+          <ul class="description__lists">
+            <li class="description__list">
+              <i class="ti-check-box"></i> No prior experience
+            </li>
 
-          <div class="review_author">
-            <p>James Onswlad - Software Engineer</p>
-          </div>
+            <li class="description__list">
+              <i class="ti-check-box"></i> Learn by doing
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> Step-by-step lessons
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> Easy to understand examples
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> From theory to practice
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> Solid understanding for programming
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> Experienced instructors
+            </li>
+            <li class="description__list">
+              <i class="ti-check-box"> </i> Career guidance and mentorship
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="reviews">
-          <p class="paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            officia ipsam laboriosam a sequi cumque sed odio perspiciatis.
+    <section class="section">
+      <div class="overview">
+        <div class="container">
+          <h2 class="heading__h2 text-center">Learning Tracks</h2>
+          <p class="paragrph text-center margin-bottom">
+            Course Modules ~ Beginners
           </p>
 
-          <div class="reviews__user">
-            <img
-              class="reviews__image"
-              src="images/user.png"
-              alt=""
-              srcset=""
-            />
-          </div>
+          <div class="ziehharmonika">
+            <h3>Mindset</h3>
+            <div>
+              <p>Myths about programming</p>
+              <p>You won't be wrong</p>
+              <p>Practice practioner</p>
+            </div>
 
-          <div class="review_author">
-            <p>James Onswlad - Software Engineer</p>
+            <h3>Beginner Html</h3>
+            <div>
+              <p>
+                This unit provides an overview of CSS, the language used to give
+                websites style.
+              </p>
+            </div>
+
+            <div>
+              <p>More Content 3</p>
+            </div>
+
+            <h3>How to build website on Your own Computer</h3>
+            <div>
+              <p>Get setup to build websites on your own computer!</p>
+            </div>
+
+            <h3>Intermediate CSS : Colors and Typography</h3>
+            <div>
+              <p>
+                Learn the CSS syntax required to adjust the colors and
+                typography of a website.
+              </p>
+            </div>
+
+            <h3>Intermediate CSS : Layout and Positioning</h3>
+            <div>
+              <p>
+                Learn how to use CSS to adjust the arrangement of content on
+                your website.
+              </p>
+            </div>
+
+            <h3>Responsive Design and Accessibility</h3>
+            <div>
+              <p>
+                This unit will teach you how to make websites that are usable
+                via different device sizes and screen readers.
+              </p>
+            </div>
+
+            <h3>Advanced CSS : Flexbox and Transistion</h3>
+            <div>
+              <p>
+                Push your web design skills with more advanced CSS syntax,
+                including the industry standard layout tool Flexbox, and CSS
+                transitions.
+              </p>
+            </div>
+
+            <h3>Finishing Touches and Publishing a webiste</h3>
+            <div>
+              <p>
+                Put the finishing touches on your websites with Font Awesome and
+                icons and assets, and then publish them for the world to see!
+              </p>
+            </div>
+
+            <h3>Learn how to build a website capstone project</h3>
+            <div>
+              <p>
+                In this final project for the Learn How To Build Websites path,
+                you'll bring all of your new skills together to make a polished
+                website.
+              </p>
+            </div>
+
+            <button class="btn btn--black download">
+              <a href="http://" download=""> Download full curriculum </a>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-newsletter">
-      <div class="container">
-        <form action="" class="form" method="get">
-          <label class="text-center" for="">
-            Subscribe to our newsletters
-          </label>
+    <section class="section">
+      <div class="reviews">
+        <div class="container">
+          <h2 class="heading__h1 margin-bottom">What people are saying</h2>
 
-          <div class="form__group">
-            <input class="form__input" type="text" name="Your email" id="" />
+          <div class="reviews__card">
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              officia ipsam laboriosam a sequi cumque sed odio perspiciatis.
+            </p>
+
+            <div class="reviews__user">
+              <img
+                class="reviews__image"
+                src="images/user.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+
+            <div class="review_author">
+              <p>James Onswlad - Software Engineer</p>
+            </div>
           </div>
 
-          <button type="submit" class="btn btn--black btn--block">
-            Subscribe
-          </button>
-        </form>
+          <div class="reviews__card">
+            <p class="paragraph">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              officia ipsam laboriosam a sequi cumque sed odio perspiciatis.
+            </p>
+
+            <div class="reviews__user">
+              <img
+                class="reviews__image"
+                src="images/user.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+
+            <div class="review_author">
+              <p>James Onswlad - Software Engineer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="faq">
+        <div class="container">
+          <h2 class="heading__h2 text-center margin-bottom">
+            Frequently asked Questions
+          </h2>
+
+          <div class="ziehharmonika">
+            <h3>Is this course free?</h3>
+            <div>
+              <p>Myths about programming</p>
+            </div>
+
+            <h3>Why enroll in this course?</h3>
+            <div>
+              <p>
+                Having a solid graps about the core foundation, principles at
+                your begineer level goes a long run , to impact your career as
+                whole. Learning from experienced developers with one-to-one
+                mentorship speed up your learning progress 10x faster in any
+                career, because you limit errors and doing things in the right
+                way is introduced at the beginner. I wish someone taught me this
+                before i started learn coding years ago.
+              </p>
+            </div>
+
+            <h3>Am don't know anything about computers</h3>
+            <div>
+              <p>
+                This unit provides an overview of CSS, the language used to give
+                websites style.
+              </p>
+            </div>
+
+            <div>
+              <p>More Content 3</p>
+            </div>
+
+            <h3>Will there be another track 2</h3>
+            <div>
+              <p>
+                Learn how to use CSS to adjust the arrangement of content on
+                your website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="newsletter">
+        <div class="container">
+          <form action="" class="form" method="get">
+            <label class="text-center" for="">
+              Subscribe to our newsletters
+            </label>
+
+            <div class="form__group">
+              <input class="form__input" type="text" name="Your email" id="" />
+            </div>
+
+            <button type="submit" class="btn btn--white btn--block">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -223,5 +292,9 @@
         &copy; 2021 - Guglex
       </div>
     </footer>
+
+    <script src="vendors/jquery/jquery-2.2.4.min.js"></script>
+    <script src="vendors/accordion/ziehharmonika.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
