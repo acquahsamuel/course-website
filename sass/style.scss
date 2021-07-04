@@ -132,14 +132,12 @@ button {
     }
 }
 
-
 .download .link {
     text-decoration: none;
     color: whitesmoke;
 }
 
-// Effective CSS 
-
+// Effective CSS
 .nav {
     display: flex;
     justify-content: center;
@@ -170,6 +168,31 @@ button {
     &__list {
         list-style: none;
         padding: 0.2rem 0;
+    }
+}
+
+.projects {
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__card {
+        background: #020e09ed;
+        color: whitesmoke;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+
+    // &__user {
+    // }
+
+    &__image {
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -209,8 +232,6 @@ button {
     }
 }
 
-
-
 .newsletter {
     padding: 4rem;
     display: flex;
@@ -243,14 +264,22 @@ button {
     }
 
     .description {
-        padding:  9rem 2rem ;
+        padding: 9rem 2rem;
     }
 
-    .overview{
+    .projects{
+        padding: 1rem;
+        &__body{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .overview {
         padding: 1rem;
     }
 
-    .faq{
+    .faq {
         padding: 1rem;
     }
 
@@ -258,8 +287,8 @@ button {
         padding: 1rem;
     }
 
-    .newsletter{
-        padding: 1rem;   
+    .newsletter {
+        padding: 1rem;
     }
 }
 
@@ -275,10 +304,6 @@ button {
     .nav {
         height: 30vh;
         padding: 2rem;
-    }
-
-    .description {
-        // padding: 2rem;
     }
 
     .reviews {
@@ -319,9 +344,6 @@ button {
         padding: 2rem;
     }
 
-    .description {
-        // padding: 1rem;
-    }
     .reviews {
         padding: 1rem;
     }
