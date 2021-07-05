@@ -69,3 +69,9 @@
   right: initial;
   left: 20px;
 }
+
+
+.ziehharmonika.faq-e > div{
+  color: black;
+  /* background-color: aqua; */
+}

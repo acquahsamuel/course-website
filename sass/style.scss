@@ -147,7 +147,6 @@ button {
 
     &__paragraph {
         display: block;
-
         margin: 1rem 0;
         font-size: 1rem;
         font-weight: 300;
@@ -175,23 +174,24 @@ button {
     &__body {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
     &__card {
-        background: #020e09ed;
+        background-color: black;
         color: whitesmoke;
         padding: 1rem;
         margin-bottom: 1rem;
-        border-radius: 5px;
+        border-radius: 6px;
+
+        &:hover {
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
     }
 
-    // &__user {
-    // }
-
     &__image {
-        width: 15rem;
+        width: 20rem;
         height: 15rem;
     }
 }
@@ -259,7 +259,7 @@ button {
     }
 
     .nav {
-        height: 30vh;
+        height: 35vh;
         padding: 2rem;
     }
 
@@ -267,9 +267,9 @@ button {
         padding: 9rem 2rem;
     }
 
-    .projects{
+    .projects {
         padding: 1rem;
-        &__body{
+        &__body {
             display: flex;
             flex-direction: column;
         }
@@ -302,7 +302,7 @@ button {
     }
 
     .nav {
-        height: 30vh;
+        height: 35vh;
         padding: 2rem;
     }
 
