@@ -179,21 +179,26 @@ button {
     }
 
     &__card {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.972);
         color: whitesmoke;
         padding: 1rem;
         margin-bottom: 1rem;
-        border-radius: 6px;
-
-        &:hover {
-            transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
+        border-radius: 3px;
     }
 
     &__image {
-        width: 20rem;
+        width: 19.5rem;
         height: 15rem;
+        background: maroon;
     }
+
+    &__link{
+        text-decoration: none;
+        color: whitesmoke;
+        border: 1px solid whitesmoke;
+        padding: .2rem .5rem;
+    }
+
 }
 
 .faq {
