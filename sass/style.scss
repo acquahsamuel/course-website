@@ -179,24 +179,29 @@ button {
     }
 
     &__card {
-        background-color: rgba(0, 0, 0, 0.972);
-        color: whitesmoke;
         padding: 1rem;
         margin-bottom: 1rem;
-        border-radius: 3px;
+        border-radius: 13px;
+        transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+        }
     }
 
     &__image {
         width: 19.5rem;
         height: 15rem;
-        background: maroon;
+        border-radius: 15px;
     }
 
     &__link {
         text-decoration: none;
-        color: whitesmoke;
-        border: 1px solid whitesmoke;
-        padding: 0.2rem 0.5rem;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0.4rem 0.4rem;
     }
 }
 
@@ -219,10 +224,10 @@ button {
         align-items: center;
         padding: 2rem;
         margin-bottom: 1rem;
-        box-shadow: 0 14px 28px rgba(243, 243, 243, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
         &:hover {
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
         }
     }
 
@@ -253,21 +258,6 @@ button {
     padding: 1rem;
 }
 
-// @media only screen and (max-width: 365px) {
-//     .heading__h1 {
-//         font-size: 1rem;
-//     }
-
-//     html {
-//         font-size: 75%;
-//     }
-
-//     .nav {
-//         height: 45vh;
-//         padding: 2rem;
-//     }
-// }
-
 @media only screen and (max-width: 600px) {
     html {
         font-size: 75%;
@@ -291,6 +281,16 @@ button {
         &__body {
             display: flex;
             flex-direction: column;
+            // width: 100%;
+        }
+
+        &__card {
+            padding: 2rem;
+        }
+
+        &__image {
+            width: 30rem;
+            height: 25rem;
         }
     }
 
