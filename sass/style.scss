@@ -192,13 +192,12 @@ button {
         background: maroon;
     }
 
-    &__link{
+    &__link {
         text-decoration: none;
         color: whitesmoke;
         border: 1px solid whitesmoke;
-        padding: .2rem .5rem;
+        padding: 0.2rem 0.5rem;
     }
-
 }
 
 .faq {
@@ -254,9 +253,24 @@ button {
     padding: 1rem;
 }
 
+// @media only screen and (max-width: 365px) {
+//     .heading__h1 {
+//         font-size: 1rem;
+//     }
+
+//     html {
+//         font-size: 75%;
+//     }
+
+//     .nav {
+//         height: 45vh;
+//         padding: 2rem;
+//     }
+// }
+
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 85%;
+        font-size: 75%;
     }
 
     .heading__h1 {
