@@ -23,7 +23,7 @@ $color-secondary: #05e8a4ed;
 }
 
 .header {
-    background: linear-gradient(top right, $color-primary, $color-secondary);
+    background: linear-gradient(top right, white, black);
     height: 1rem;
 }
 
@@ -183,7 +183,7 @@ button {
         margin-bottom: 1rem;
         border-radius: 13px;
         transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
@@ -224,7 +224,7 @@ button {
         align-items: center;
         padding: 2rem;
         margin-bottom: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
@@ -303,7 +303,7 @@ button {
     }
 
     .reviews {
-        padding: 1rem;
+        padding: 2rem;
     }
 
     .newsletter {
@@ -345,7 +345,7 @@ button {
     }
 
     .reviews {
-        padding: 1rem;
+        padding: 2rem;
     }
 }
 
@@ -364,6 +364,6 @@ button {
     }
 
     .reviews {
-        padding: 1rem;
+        padding: 2rem;
     }
 }
