@@ -4,8 +4,14 @@
 $font-family-inter: "Inter", sans-serif;
 $font-family-lexend: "Lexend Deca", sans-serif;
 
-$color-primary: #0bdb27;
+
+
+// rgb(42, 255, 255);
+// 05e8a4ed
+$color-primary:  rgb(42, 255, 255);
 $color-secondary: #05e8a4ed;
+$color-black: #000;
+$color-white: #fff;
 
 *,
 *::before,
@@ -22,7 +28,7 @@ $color-secondary: #05e8a4ed;
 }
 
 .header {
-    background: linear-gradient(top right, white, black);
+    background: linear-gradient(top right, $color-primary, black);
     height: 1rem;
 }
 
@@ -134,7 +140,7 @@ button {
 
 .download .link {
     text-decoration: none;
-    color: whitesmoke;
+    color: $color-white;
 }
 
 // Effective CSS
@@ -142,7 +148,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(42, 255, 255);
+    background: $color-primary;
     clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
 
     &__paragraph {
@@ -153,8 +159,8 @@ button {
     }
 
     &__tag {
-        background-color: black;
-        color: whitesmoke;
+        background-color: $color-black;
+        color: $color-white;
     }
 }
 
@@ -162,7 +168,7 @@ button {
     background: black;
     margin-top: -7rem;
     padding: 10rem 0;
-    color: whitesmoke;
+    color: $color-white;
 
     &__list {
         list-style: none;
@@ -198,17 +204,17 @@ button {
 
     &__link {
         text-decoration: none;
-        color: black;
-        border: 1px solid black;
+        color: $color-black;
+        border: 1px solid $color-black;
         border-radius: 5px;
         padding: 0.4rem 0.4rem;
     }
 }
 
 .faq {
-    background-color: black;
+    background-color: $color-black;
     padding: 4rem 0;
-    color: whitesmoke;
+    color: $color-white;
 }
 
 .overview {
@@ -238,6 +244,7 @@ button {
     &__image {
         width: 4rem;
         border-radius: 40px;
+        margin-bottom: .7rem;
     }
 }
 
@@ -246,8 +253,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: whitesmoke;
+    background-color: $color-black;
+    color: $color-white;
 }
 
 .footer {
