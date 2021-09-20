@@ -4,8 +4,6 @@
 $font-family-inter: "Inter", sans-serif;
 $font-family-lexend: "Lexend Deca", sans-serif;
 
-// rgb(42, 255, 255);
-// 05e8a4ed
 $color-primary: rgb(42, 255, 255);
 $color-secondary: #05e8a4ed;
 $color-black: #000;
@@ -141,7 +139,7 @@ button {
     color: $color-white;
 }
 
-.link_enroll{
+.link_enroll {
     text-decoration: none;
     color: white;
 }
@@ -291,7 +289,6 @@ button {
         &__body {
             display: flex;
             flex-direction: column;
-            // width: 100%;
         }
 
         &__card {
