@@ -10,19 +10,69 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body{
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section{
+      background: white;
+      width: 300px;
+      border-radius: 10px;
+    }
+
+    article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    article img{
+      border-radius: 10px;
+      width: 90%;
+      margin: 10px;
+      height: auto;
+    }
+
+    .heading{
+      width: 90%;
+      font-weight: 700;
+      font-size: 23px;
+      color: black;
+      text-align: center;
+    }
+    article p{
+      font-size: 17px;
+      font-weight: 300;
+      color: grey;
+      text-align: center;
+    }
+
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <!--Section element containing qr-code image and text-->
+  <div class="center-div">
+    <section>
+      <article>
+        <img src="images/image-qr-code.png" alt="image-qr-code">
+          <p class="heading">Improve your front-end skills by building projects</p>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to<br> the next level
+          </p>
+      </article>
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Akosua Akyie Obeng</a>.
   </div>
 </body>
 </html>
