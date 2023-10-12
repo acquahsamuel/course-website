@@ -3,191 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Job Listings</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/League+Spartan">
 </head>
 <body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
+  <header>
+    <img src="images/bg-header-desktop.svg" alt="header image">
+  </header>
+  <main>
+    <!---Start of photosnap-->
+    <section class="section-style">
+      <img src="images/photosnap.svg" alt="photosnap">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Photosnap</p>
+          <button>NEW!</button>
+          <button class="featured-btn">FEATURED</button>
+        </article>
+        <p class="role">Senior Frontend Developer</p>
+        <article class="schedule">
+          <p>1d ago</p>
+            <li>Full Time</li>
+            <li>USA only</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Senior</button></li>
+          <li><button>HTML</button></li>
+          <li><button>CSS</button></li>
+          <li><button>JavaScript</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of photosnap-->
 
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
+    <!--Start of manage-->
+    <section class="section-style">
+      <img src="images/manage.svg" alt="manage">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Manage</p>
+          <button>NEW!</button>
+          <button class="featured-btn">FEATURED</button>
+        </article>
+        <p class="role">Fullstack Developer</p>
+        <article class="schedule">
+          <p>1d ago</p>
+            <li>Part Time</li>
+            <li>Remote</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Fullstack</button></li>
+          <li><button>Midweight</button></li>
+          <li><button>Python</button></li>
+          <li><button>React</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of manage-->
 
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
+    <!--Start of account-->
+    <section>
+      <img src="images/account.svg" alt="photosnap">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Account</p>
+          <button>NEW!</button>
+        </article>
+        <p class="role">Junior Frontend Developer</p>
+        <article class="schedule">
+          <p>2d ago</p>
+            <li>Full Time</li>
+            <li>USA only</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>React</button></li>
+          <li><button>Sass</button></li>
+          <li><button>JavaScript</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of account-->
 
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
+    <!--Start of MyHome-->
+    <section>
+      <img src="images/myhome.svg" alt="photosnap">
+      <div class="section-div">
+        <article >
+          <p class="company-name">MyHome</p>
+        </article>
+        <p class="role">Junior Frontend Developer</p>
+        <article class="schedule">
+          <p>1w ago</p>
+            <li>Full Time</li>
+            <li>USA only</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>CSS</button></li>
+          <li><button>JavaScript</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of my home-->
 
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+    <!--start of loop studios-->
+    <section>
+      <img src="images/loop-studios.svg" alt="loop">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Loop Studios</p>
+        </article>
+        <p class="role">Software Engineer</p>
+        <article class="schedule">
+          <p>1w ago</p>
+          <li>Full Time</li>
+          <li>Worldwide</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Fullstack</button></li>
+          <li><button>Midweight</button></li>
+          <li><button>JavaScript</button></li>
+          <li><button>Sass</button></li>
+          <li><button>Ruby</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of loop studios-->
 
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
+    <!--Faceit beginning-->
+    <section>
+      <img src="images/faceit.svg" alt="faceit">
+      <div class="section-div">
+        <article >
+          <p class="company-name">FaceIt</p>
+        </article>
+        <p class="role">Junior Backend Developer</p>
+        <article class="schedule">
+          <p>2w ago</p>
+            <li>Full Time</li>
+            <li>UK only</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Backend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>Ruby</button></li>
+          <li><button>RoR</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of faceit-->
 
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
+    <!--Beginning of shortly-->
+    <section>
+      <img src="images/shortly.svg" alt="shortly">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Shortly</p>
+        </article>
+        <p class="role">Junior Developer</p>
+        <article class="schedule">
+          <p>2w ago </p>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>HTML</button></li>
+          <li><button>Sass</button></li>
+          <li><button>JavaScript</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of shortly-->
 
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
+    <!--insure beginning-->
+    <section>
+      <img src="images/insure.svg" alt="insure">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Insure</p>
+        </article>
+        <p class="role">Junior Frontend Developer</p>
+        <article class="schedule">
+          <p>2w ago </p>
+            <li>Full Time</li>
+            <li>USA only</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>Vue</button></li>
+          <li><button>JavaScript</button></li>
+          <li><button>Sass</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of insure-->
 
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
+    <!--eyecam beginning-->
+    <section>
+      <img src="images/eyecam-co.svg" alt="Eyecam">
+      <div class="section-div">
+        <article >
+          <p class="company-name">Eyecam Co.</p>
+        </article>
+        <p class="role">Fullstack Engineer</p>
+        <article class="schedule">
+          <p>3w ago </p>
+            <li>Full Time</li>
+            <li>Worldwide</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Midweight</button></li>
+          <li><button>JavaScript</button></li>
+          <li><button>Django</button></li>
+          <li><button>Python</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of eyecam-->
 
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
+    <!--eyecam beginning-->
+    <section>
+      <img src="images/the-air-filter-company.svg" alt="The air Filter Company">
+      <div class="section-div">
+        <article >
+          <p class="company-name">The Air Filter Company</p>
+        </article>
+        <p class="role">Front-end Dev</p>
+        <article class="schedule">
+          <p>1m ago </p>
+            <li>Part Time</li>
+            <li>Worldwide</li>
+        </article>
+      </div>
+      <article class="category">
+        <ul>
+          <li><button>Frontend</button></li>
+          <li><button>Junior</button></li>
+          <li><button>React</button></li>
+          <li><button>Sass</button></li>
+          <li><button>JavaScript</button></li>
+        </ul>
+      </article>
+    </section>
+    <!--End of eyecam-->
+
+  </main>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Akosua Akyie Obeng</a>.
   </div>
 </body>
 </html>

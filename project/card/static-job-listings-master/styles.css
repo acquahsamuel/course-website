@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: hsl(180, 52%, 96%);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header{
+  margin-bottom: 40px;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 90%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.03);
+  margin-bottom: 20px;
+}
+.section-style{
+  border-left-style: solid;
+  border-left-color: hsl(180, 29%, 50%);
+}
+.section-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+section img{
+  width: 80px;
+  height: 80px;
+  margin: 25px 10px 10px 20px;
+}
+
+article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.company-name{
+  color: hsl(180, 29%, 50%);
+  margin-right: 8px;
+}
+
+button{
+  border-radius: 10px;
+  color: white;
+  background-color:  hsl(180, 29%, 50%);
+  margin-right: 5px;
+  margin-top: 3px;
+  border-style: none;
+  width: 40px;
+  font-size: 12px;
+}
+.featured-btn{
+  width: auto;
+  background-color: black;
+}
+
+.schedule{
+  font-size: 10px;
+  color: hsl(180, 14%, 20%);
+  margin-top: 10px;
+}
+.schedule li{
+  margin-left: 5px;
+}
+
+.category{
+  position: relative;
+}
+.category ul{
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  top: 0;
+  left: 40pc;
+  list-style: none;
+  padding: 0;
+}
+.category ul li button{
+  background-color: hsl(180, 31%, 95%);
+  margin-right: 10px;
+  color: hsl(180, 29%, 50%);
+  font-size: 10px;
+  width: auto;
+  border-radius: 2px;
+}
+
+@media (max-width: 750px) {
+  /* CSS rules for screens smaller than 768px */
+  header img{
+    width: 100%;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 11pc;
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+  }
+  section img{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    z-index: 2;
+  }
+  article{
+    margin-top: 30px;
+    display: flex;
+    align-items: self-start;
+    justify-content: left;
+    margin-right: 14pc;
+    
+  }
+  .section-div{
+    border-bottom: 1px solid grey;
+  }
+  .category{
+    margin-right: 105pc;
+  }
+  .category ul li button{
+    width: 60px;
+    height: 40px;
+  }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
