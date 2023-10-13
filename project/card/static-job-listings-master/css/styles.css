@@ -5,7 +5,9 @@
 
 body{
   background-color: hsl(180, 52%, 96%);
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'League Spartan', sans-serif; */
   font-size: 15px;
 }
 
@@ -31,8 +33,14 @@ section{
   margin-bottom: 20px;
 }
 .section-style{
+  
   border-left-style: solid;
   border-left-color: hsl(180, 29%, 50%);
+
+
+  
+
+
 }
 .section-div{
   display: flex;
@@ -116,8 +124,8 @@ button{
     margin-top: 25px;
   }
   section img{
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     position: absolute;
     top: -50px;
     left: 20px;
@@ -132,7 +140,7 @@ button{
     
   }
   .section-div{
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
   }
   .category{
     margin-right: 105pc;
