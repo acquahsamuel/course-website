@@ -6,6 +6,8 @@ $font-family-lexend: "Lexend Deca", sans-serif;
 
 $color-primary: rgb(78, 223, 191);
 $color-secondary: #05e8a4ed;
+// 05e8a4ed
+// #4285f4
 $color-black: #000;
 $color-white: #fff;
 
@@ -24,7 +26,7 @@ $color-white: #fff;
 }
 
 .header {
-    background: linear-gradient(top right, $color-primary, black);
+    background: linear-gradient(to right, $color-primary, black);
     height: 1rem;
 }
 
@@ -94,6 +96,13 @@ button {
     &--black {
         padding: 0.9rem 1.4rem;
         background-color: rgb(7, 10, 14);
+        color: white;
+    }
+
+
+    &--green {
+        padding: 0.9rem 1.4rem;
+        background-color: rgb(1, 117, 78);
         color: white;
     }
 
@@ -188,7 +197,6 @@ button {
     &__card {
         padding: 1rem;
         margin-bottom: 1rem;
-        border-radius: 13px;
         transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 
@@ -207,8 +215,9 @@ button {
         text-decoration: none;
         color: $color-black;
         border: 1px solid $color-black;
-        border-radius: 5px;
-        padding: 0.4rem 0.4rem;
+        // border-radius: 5px;
+        padding: 0.4rem 0.8rem;
+        display: inline-block;
     }
 }
 
@@ -251,11 +260,20 @@ button {
 
 .newsletter {
     padding: 4rem;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-black;
     color: $color-white;
+
+
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+        font-family: $font-family-lexend;
+        // border: 1px solid white;
+    }
 }
 
 .footer {

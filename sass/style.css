@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(to right, rgb(78, 223, 191), black);
+  height: 1rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading__h1 {
+  font-size: 3rem;
+}
+
+.heading__h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.heading__h3 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+i {
+  color: rgba(5, 232, 164, 0.9294117647);
+}
+
+li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.paragraph {
+  margin: 0.7rem 0;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  color: seashell;
+  font-size: 1.4rem;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+.btn--black {
+  padding: 0.9rem 1.4rem;
+  background-color: rgb(7, 10, 14);
+  color: white;
+}
+.btn--green {
+  padding: 0.9rem 1.4rem;
+  background-color: rgb(1, 117, 78);
+  color: white;
+}
+.btn--white {
+  padding: 0.7rem 1.4rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid whitesmoke;
+}
+.btn--white:hover {
+  background-color: black;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+}
+.btn--block {
+  width: 100%;
+}
+
+.form__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form__input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.3rem 0;
+}
+.form__input:focus {
+  outline: none;
+}
+
+.download .link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link_enroll {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(78, 223, 191);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+}
+.nav__paragraph {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.nav__tag {
+  background-color: #000;
+  color: #fff;
+}
+
+.description {
+  background: black;
+  margin-top: -7rem;
+  padding: 10rem 0;
+  color: #fff;
+}
+.description__list {
+  list-style: none;
+  padding: 0.2rem 0;
+}
+
+.projects__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects__card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.projects__card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.projects__image {
+  width: 19.5rem;
+  height: 15rem;
+  border-radius: 15px;
+}
+.projects__link {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+}
+
+.faq {
+  background-color: #000;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.overview {
+  padding: 4rem 0;
+  background: rgb(240, 239, 239);
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.reviews__card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.reviews__user {
+  display: flex;
+}
+.reviews__image {
+  width: 4rem;
+  border-radius: 40px;
+  margin-bottom: 0.7rem;
+}
+
+.newsletter {
+  padding: 4rem;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+}
+.newsletter h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+  .heading__h1 {
+    font-size: 2rem;
+  }
+  .nav {
+    height: 35vh;
+    padding: 2rem;
+  }
+  .description {
+    padding: 9rem 2rem;
+  }
+  .projects {
+    padding: 1rem;
+  }
+  .projects__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__card {
+    padding: 1.5rem;
+  }
+  .projects__image {
+    width: 27rem;
+    height: 22rem;
+  }
+  .overview {
+    padding: 1rem;
+  }
+  .faq {
+    padding: 1rem;
+  }
+  .reviews {
+    padding: 2rem;
+  }
+  .newsletter {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+  .heading__h1 {
+    font-size: 2rem;
+  }
+  .nav {
+    height: 35vh;
+    padding: 2rem;
+  }
+  .reviews {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+  .heading__h1 {
+    font-size: 2rem;
+  }
+  .nav {
+    height: 40vh;
+    padding: 2rem;
+  }
+  .reviews {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .heading__h1 {
+    font-size: 2.5rem;
+  }
+  .heading__h2 {
+    font-size: 3rem;
+  }
+  .nav {
+    height: 45vh;
+    padding: 2rem;
+  }
+  .reviews {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
